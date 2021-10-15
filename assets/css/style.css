@@ -77,6 +77,9 @@ CONTENT
 html, body{
     font-family: 'Space Grotesk', sans-serif;
     background: var(--bodyBackground);
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 strong{
     font-weight: bold;
@@ -86,8 +89,8 @@ strong{
 
 /*TEXT SELECTION*/
 ::selection{
-    color:var(--selectioncolor);
-    background:var(--selectionBGcolor);
+    color:v#000;
+    background:v#fff;
 }
 
 /*SCROLLBAR*/
@@ -185,4 +188,107 @@ nav{
 .nav-menu-icon:hover{
     -webkit-transform: perspective(10px) translateZ(2px);
     transform: perspective(10px) translateZ(2px);
+}
+
+/* SOCIAL */
+.sideleft-text{
+    color:#b5b5b5;
+    position: fixed;
+    text-transform: uppercase;
+    transform: rotateZ(-90deg);
+    margin:0px;
+    padding:0px;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 300;
+    z-index:0!important;
+    top:45%;
+    left:40px;
+}
+.sideleft-menu{
+    position: fixed;
+    list-style-type: none;
+    left:140px;
+    bottom:110px;
+}
+.sideleft-menu li{
+    margin-top: 15px;
+}
+
+.sideleft-menu li a i{
+    font-size: 20px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.sideleft-menu li a i:hover{
+    -webkit-transform: perspective(10px) translateZ(2px);
+    transform: perspective(10px) translateZ(2px);
+}
+.ig{
+    background: radial-gradient(at top right,rgb(64,93,230), rgb(88,81,219), rgb(131,58,180), rgb(193,53,132), rgb(225,48,108), rgb(253,29,29), rgb(245,96,64), rgb(247,119,55), rgb(252,175,69), rgb(255,220,128));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.in{
+    color: #0e76a8;
+}
+.git{
+    color:#636363;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 20px 140px;
+    width: 100%;
+    color: #b5b5b5;
+    font-size: 14px;
+}
+
+footer .copyright{
+    text-align: center;
+}
+
+footer .copyright p a{
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+footer .copyright p a:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*INDAGARE*/
+
+#fp-nav{
+    right:115px!important;
+}
+.fp-tooltip{
+    font-size: 12px!important;
+    color:#a1a1a1!important;
+}
+#fp-nav ul{
+
+}
+#fp-nav ul li{
+    margin-top:20px!important;
+}
+#fp-nav ul li a span{
+    background: #4a4a4a!important;
+    padding: 3px;
+}
+#fp-nav ul li a.active span{
+    background: #dbdbdb!important;
+}
+#fp-nav ul li a span:hover{
+    background: #dbdbdb!important;
 }
