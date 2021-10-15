@@ -2,33 +2,37 @@
 <html lang="it-IT">
     <head>
         <title>Nicolas Ricardi - Junior Web Developer</title>
-
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Favicon -->
+        <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" type="text/css"/>
 
+        <!-- Canonical URL-->
+        <link rel="canonical" href="https://www.nicolasricardi.com/" itemprop="url">
 
-        <!-- Meta / Twitter Card / OG -->
+        <!-- Meta -->  
         <meta name="description" content="Junior Web Developer Student at Start2Impact" />
         <meta name="keywords" content="Nicolas Ricardi, Junior Web Developer, Web Developer Portfolio" />
-        <link rel="canonical" href="https://www.nicolasricardi.com/">
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
         
+        <!-- Twitter Card -->
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Nicolas Ricardi - Junior Web Developer">
         <meta name="twitter:description" content="Junior Web Developer Student at Start2Impact">
         <meta name="twitter:site" content="@nick_ricardi00" />
         <meta name="twitter:creator" content="@nick_ricardi00" />
-
+        
+        <!-- OpenGraph -->
         <meta property="og:title" content="Nicolas Ricardi - Junior Web Developer" />
         <meta property="og:description" content="Junior Web Developer Student at Start2Impact" />
-        <meta name="author" content="Nicolas Ricardi">
+        <meta name="og:author" content="Nicolas Ricardi">
         <meta property="og:site_name" content="Nicolas Ricardi">
         <meta property="og:locale" content="it_IT">
         <meta property="og:type" content="website" />
@@ -46,45 +50,140 @@
         </script>
 
     </head>
-    <body>
+    <body onload="load()">
 
-        <!-- Header -->
-        <header>
-            <!-- Navbar -->
-            <nav>
-                <div class="nav-logo">
-                    <a href="https://www.nicolasricardi.it" target="_self" rel="author" title="Nicolas Ricardi - Junior Web Developer" ><img src="assets/images/logo.png" alt="Nicolas Ricardi Logo" class="logo" /></a>
+        <!-- Loader -->
+        <div id="loader" class="loader">
+            <h2 class="loader-text">Loading . . .</h2>
+        </div>
+            <!-- Loader End-->
+
+        <main id="main" style="display: none;">
+            <!-- Header -->
+            <header>
+                <!-- Navbar -->
+                <nav>
+                    <div class="nav-logo">
+                        <a href="https://www.nicolasricardi.it" target="_self" rel="author" title="Nicolas Ricardi - Junior Web Developer" ><img src="assets/images/logo.png" alt="Nicolas Ricardi Logo" class="logo" /></a>
+                    </div>
+                    <ul id="menu" class="nav-menu">
+                        <li><a href="#about" title="About" class="hvr-underline-from-left">about</a></li>
+                        <li><a href="#skill" title="Skills" class="hvr-underline-from-left">skills</a></li>
+                        <li><a href="#portfolio" title="Portfolio" class="hvr-underline-from-left">Portfolio</a></li>
+                        <li><a href="#get-in-touch" title="Get in Touch" class="hvr-sweep-to-right"><strong>Get in Touch</strong></a></li>
+                    </ul>
+                </nav>
+                <!-- Navbar End -->
+            </header>
+            <!-- Header End -->
+
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-layer">
+                    <div class="hero-container">
+                        <p class="hero-ita"> Find me in <span>Treviglio (BG) 🇮🇹</span></p>
+                        <h1 class="hero-title">I'm <span>Nicolas Ricardi</span></h1>
+                        <p class="hero-description">
+                            I am a <strong>junior web developer student</strong> at Strart2Impact and an aspiring <strong>IT engineer</strong>.<br />
+                            In my spare time I work with <strong>local companies</strong> in developing their online presence.
+                        </p>
+                        <a href="#get-in-touch" class="hero-cta hvr-sweep-to-right">More about me</a>
+                    </div>
+                    <p class="hero-text-big">Hello</p>
                 </div>
-                <ul id="menu" class="nav-menu">
-                    <li><a href="#about" title="About" class="hvr-underline-from-left">about</a></li>
-                    <li><a href="#servizi" title="Servizi" class="hvr-underline-from-left">servizi</a></li>
-                    <li><a href="#portfolio" title="Portfolio" class="hvr-underline-from-left">i miei progetti</a></li>
-                    <li><a href="#get-in-touch" title="Get in Touch"><strong>Prendiamo un caffé</strong></a></li>
-                    <li><i class="nav-menu-icon fas fa-folder"></i></li>
-                </ul>
-            </nav>
-            <!-- Navbar End -->
-        </header>
-        <!-- Header End -->
+            </section>
+            <!-- Hero End -->
 
-        <main>
+            <!-- About -->
+            <section class="about">
+                <section class="about-layer">
+                    <div class="about-left">
+                        <div class="about-img">
+                            <div class="about-img-container">
+                                <div class="img-decor"></div>
+                                <div class="nicolas-img"></div>
+                                <img src="assets/images/me.jpeg" alt="Nicolas Ricardi Portrait">
+                            </div>
+                        </div>
+                        <div class="about-container">
+                            <h2 class="about-title">My Story</h2>
+                            <p class="about-description">Sono uno studente di <b>Ingegneria Informatica</b> al <b>Politecnico di Milano</b>.<br /> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dolorum tempora voluptatem ratione totam id ipsam iusto quo consequatur minima, nulla incidunt laboriosam hic voluptas quisquam quibusdam a reiciendis provident!</p>
+                        </div>
+                    </div>
+                    <p class="about-text-big">About</p>
+                </section>
+            </section>
+            <!-- About End -->
 
+            <!-- Skills -->
+
+
+            <!-- Skills End -->
+
+            <!-- Portfolio -->
+
+
+            <!-- Portfolio End -->
+
+            <!-- Get in Touch -->
+            <section class="get-in-touch">
+                <section class="get-in-touch-layer">
+                    <div class="get-in-touch-container">
+                        <form action="php/sendMail.php" class="get-in-touch-form" method="POST">
+                            <div class="form-group">
+                                <input type="text" required="required" name="FullName" id="FullName" placeholder="Full Name" class="form-input">
+                                <label for="FullName" class="form-label">Full Name*</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required="required" name="Email" id="Email" placeholder="Email" class="form-input">
+                                <label for="Email" class="form-label">Email*</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required="required" name="Phone" id="Phone" placeholder="Phone" class="form-input">
+                                <label for="Phone" class="form-label">Phone*</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required="required" name="Message" id="Message" placeholder="Message" class="form-input">
+                                <label for="Message" class="form-label">Message*</label>
+                            </div>
+
+                            <p class="privacy"><input type="checkbox" required="required" name="Privacy" id="Privacy"> <label for="Privacy" class="label-privacy privacy"><b>ACCETTO</b> </label> | Ho letto e accetto la politica di privacy ai sensi del Regolamento 2016/679 (GDPR).</p>
+                            
+                            <input type="submit" required="required" name="Submit" id="Submit" value="Send Message" class="form-submit">
+                        </form>
+                    </div>
+                    <p class="get-in-touch-text-big">Get in Touch</p>
+                </section>
+            </section>
+            <!-- Get in Touch End -->
+
+            <footer>
+                <div class="copyright">
+                    <p>Design & Develop by <strong>Nicolas Ricardi</strong> © 2021 | VAT: 04455400160 | <a href="mailto:info@nicolasricardi.com" target="_blank">info@nicolasricardi.com</a></p>
+                </div>
+            </footer>
+
+            <!-- Left Sidebar -->
+            <h3 class="sideleft-text">C.S. Engineering Student&nbsp;&nbsp; /&nbsp;&nbsp; Freelance</h3>
+            <ul class="sideleft-menu">
+                <li><a href="https://www.instagram.com/nick_ricardi" title="Instagram" target="_blank" rel="nofollow"><i class="ig fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/nicolasricardi" title="Linkedin" target="_blank" rel="nofollow"><i class="in fab fa-linkedin-in"></i></i></a></li>
+                <li><a href="https://github.com/NickEagle2400" title="GitHub" target="_blank" rel="nofollow"><i class="git fab fa-github-alt"></i></a></li>
+            </ul>
+            <!-- Left Sidebar End-->
         </main>
 
-        <footer>
-            <div class="copyright">
-                <p>Design & Develop by <strong>Nicolas Ricardi</strong> © 2021 | P. IVA: 04455400160 | <a href="mailto:info@nicolasricardi.com" target="_blank">info@nicolasricardi.com</a></p>
-            </div>
-        </footer>
+        <script>
+            var elem;
 
-        <!-- Sidebar -->
-        <h3 class="sideleft-text">Studente&nbsp;&nbsp; /&nbsp;&nbsp; Libero Professionista</h3>
-        <ul class="sideleft-menu">
-            <li><a href="https://www.instagram.com/nick_ricardi" title="Instagram" target="_blank" rel="nofollow"><i class="ig fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/nicolasricardi" title="Linkedin" target="_blank" rel="nofollow"><i class="in fab fa-linkedin-in"></i></i></a></li>
-            <li><a href="https://github.com/NickEagle2400" title="GitHub" target="_blank" rel="nofollow"><i class="git fab fa-github-alt"></i></a></li>
-        </ul>
-        <!-- Sidebar End-->
-
+            function load() {
+                elem = setTimeout(showPage, 1000);
+            }
+            
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("main").style.display = "block";
+            }
+        </script>
     </body>
 </html>
