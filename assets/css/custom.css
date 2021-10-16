@@ -118,7 +118,7 @@
     z-index: 1;
 }
 
-.about-img-container img, .nicolas-img{
+.about-img-container img, .shadow{
     z-index:2;
     position: absolute;
     top:0;
@@ -130,12 +130,16 @@
     filter: grayscale(100%);
     z-index: 2;
 }
-.nicolas-img{
+.shadow{
     box-shadow:20px 20px 50px 10px #000 inset;
     z-index: 3;
 }
 
-
+.far.fa-bookmark{
+    color: #389EDB;
+    font-size:40px;
+    margin-right: 20px;
+}
 .about-title{
     margin-bottom: 10px;
     font-size: 45px;
@@ -177,19 +181,151 @@
 /*________________________________*/
 /*________________________________*/
 
+/* PORTFOLIO */
+.portfolio{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px ;
+}
+.portfolio-text{
+    text-align: left;
+    padding: 0px 250px;
+    width: 100%;
+}
+.portfolio-title{
+    color:white;
+    font-size:45px;
+}
+.works-container{
+    width: 100%;
+    padding: 20px 300px;
+    margin-top: 20px;
+}
+.work-list{
+    margin: 0;
+    padding: 0;
+}
+.work-list li{
+    list-style-type: none;
+    margin: 50px 0px;
+}
+.work-list li:nth-child(1){
+    margin-right:-150px ;
+}
+.work-list li:nth-child(2){
+    margin-left:-100px ;
+}
+.work-one, .work-two{
+    display: block;
+    width: 90%;
+    height: 100%;
+    width: 80%;
+    opacity: 1;
+    height: 400px;
+    background-color: #1c1d25;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-one{
+    background: url(../images/ht_point.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    transition: all 0.4s;
+}
+
+.work-one:hover{
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.work-two{
+    background: url(../images/case-study-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin-top: 150px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    transition: all 0.4s;
+}
+.work-two:hover{
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.w-layer{
+    width: 100%;
+    height: 100%;
+    background: #00000087;
+    animation-name:onHoverAnimationOut;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.w-text-l{
+    position: absolute;
+    bottom:40px;
+    left:40px;
+}
+.w-text-r{
+    position: absolute;
+    bottom:40px;
+    right:40px;
+    text-align: right;
+}
+.w-title{
+    color: #389EDB;
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+.w-description{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.w-link{
+    position: relative;
+    padding: 10px 20px;
+    display: block;
+    border:1px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.w-link:hover{
+    color:#000!important;
+}
+.hvr-sweep-to-left::before{
+    background: white!important;
+}
+
+
+
 /* GET IN TOUCH */
 
 .get-in-touch{
-    background: url(../images/getintouch.jpg);
+    /*background: url(../images/getintouch.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 .get-in-touch-layer{
     background: #000000cd;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+.get-in-touch-title{
+    color:#fff;
+    font-size: 45px;
 }
 .get-in-touch-container{
     width: 100%;
@@ -199,6 +335,13 @@
     align-items: center;
     justify-content: center;
     padding: 0px 250px;
+    margin-top: 100px;
+}
+
+.far.fa-paper-plane{
+    color: #389EDB;
+    font-size:40px;
+    margin-right:20px;
 }
 
 .get-in-touch-form{
@@ -305,6 +448,7 @@ input:-webkit-autofill:active {
     padding: 15px;
     background: transparent;
     transition: all 0.5s;
+    z-index: 5;
 }
 
 .form-submit:hover{
@@ -321,12 +465,12 @@ input:-webkit-autofill:active {
 .get-in-touch-text-big{
     position: absolute;
     font-weight: bold;
-    bottom:-45px;
+    bottom:20px;
     right:-20px;
     font-size: 180px;
     color: #7a7a7a40;
     letter-spacing: -10px;
     margin: 0;
     line-height: 1;
-    z-index: 2;
+    z-index: 1;
 }
