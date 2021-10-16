@@ -409,6 +409,8 @@ footer .copyright p a:hover{
 
     .nav-menu li:nth-child(4) a{
         display: block;
+        position: relative;
+        width:100%;
         font-size: 14px;
     }
 
