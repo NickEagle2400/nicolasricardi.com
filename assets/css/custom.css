@@ -684,9 +684,7 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 676px) {
     /* HERO */
-    .hero{
-
-    }
+ 
     .hero-layer{
         margin-top: 150px;
         height: 100%;
@@ -697,19 +695,11 @@ input:-webkit-autofill:active {
     .hero-ita{
         margin: 10px 0px;
     }
-    .hero-ita span{
-
-    }
-    .hero-title{
-    }
-    .hero-title span{
-    }
     .typewriter{
         width: 100%;
         margin: 15px 0px;
     }
-    .hero-description{
-    }
+
     .hero-cta{
         font-size: 18px;
         width: 100%;
@@ -735,38 +725,18 @@ input:-webkit-autofill:active {
         padding: 25px 20px;
         margin-bottom: 40px;
     }
-    .about-img-container{
 
-    }
     .img-decor{
         top:10px;
         left:10px;
     }
-    
-    .about-img-container img, .shadow{
 
-    }
-    .shadow{
-
-    }
-    
     .far.fa-bookmark{
         margin:0;
     }
-    .about-title{
-
-    }
-    
-    .about-description{
-
-    }
-    .sub-p{
-
-    }
-    
     .about-container{
         width: 100%;
-        padding: 10px;
+        padding: 10px 0px;
     }
     
     .about-text-big{
@@ -774,14 +744,11 @@ input:-webkit-autofill:active {
     }
 
 
-
+    /* SKILLS */
     .skills{
         margin-top: 50px ;
         padding:0px 20px;
-        padding-bottom: 200px;
-    }
-    .skills-text{
-    
+        padding-bottom: 20px;
     }
     .skills-text h2{
         color:white;
@@ -791,128 +758,153 @@ input:-webkit-autofill:active {
         color:#389edb;
     }
     .skills-container{
-        margin-top:10px;
+        margin-top: 0px;
     }
     .skills-row{
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         margin-top: 0px;
     }
     
     .skill{
-        position: relative;
-        top: 0;
         margin-top: 50px;
-        padding: 25px;
+        padding: 15px;
         width: 100%;
-        height: 180px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: all .5s;
+        height: 160px;
+        transition-duration: 0.3s;
     }
     .skill:hover{
-        top:-15px;
+        top:-5px;
     }
-    .html{
-        /*background: #ff4d0059;*/
-        box-shadow: 3px 3px 20px 3px var(--html);
-        border-radius: 8px;
-        border-bottom: 4px solid var(--html);
-        border-right: 4px solid var(--html);
-    }
-    .css{
-        /*background: #ff4d0059;*/
-        box-shadow: 3px 3px 20px 3px var(--css);
-        border-radius: 8px;
-        border-bottom: 4px solid var(--css);
-        border-right: 4px solid var(--css);
-    }
-    .javascript{
-        /*background: #ff4d0059;*/
-        box-shadow: 3px 3px 20px 3px var(--js);
-        border-radius: 8px;
-        border-bottom: 4px solid var(--js);
-        border-right: 4px solid var(--js);
-    }
-    .react{
-        /*background: #ff4d0059;*/
-        box-shadow: 3px 3px 20px 3px var(--react);
-        border-radius: 8px;
-        border-bottom: 4px solid var(--react);
-        border-right: 4px solid var(--react);
-    }
-    
     .skill-container{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
     }
     .skill-img{
-        width: 30%;
-        height: 100%;
+        width: 32%;
     }
-    .skill-img img{
-        width: 100%;
-        height: 100%;
-    }
-    
     .skill-text{
-        width: 70%;
-        padding-left: 25px;
+        width: 68%;
+        padding:0px 15px;
     }
     .skill-name{
         color: white;
-        font-size:30px;
+        font-size:25px;
+    }
+    .skill-description{
+        font-size: 16px;
+        line-height: 1.6;
     }
     .skillbar{
         height: 10px;
-        width: 200px;
-        margin-top: 20px;
+        width: 100%;
+        margin-top: 15px;
         background: #1c1d25;
         border:1px solid transparent;
         border-radius: 10px;
         overflow: hidden;
     }
-    
-    .skillbar-html{
-        width: 90%;
-        height: 100%;
-        background: var(--html);
-        border-radius: 10px;
-    }
-    .skillbar-css{
-        width: 80%;
-        height: 100%;
-        background: var(--css);
-        border-radius: 10px;
-    }
-    .skillbar-js{
-        width: 30%;
-        height: 100%;
-        background: var(--js);
-        border-radius: 10px;
-    }
-    .skillbar-react{
-        width: 20%;
-        height: 100%;
-        background: var(--react);
-        border-radius: 10px;
-    }
+
     .skill-text-big{
-        position: absolute;
-        font-weight: bold;
-        bottom:-35px;
-        right:80px;
-        font-size: 180px;
-        color: #7a7a7a40;
-        letter-spacing: -10px;
-        margin: 0;
-        line-height: 1;
-        z-index: 3;
+        display: none;
     }
+
+    /* PORTFOLIO */
+
+    .portfolio{
+        height: 100%;
+        margin-top: 60px ;
+        align-items: unset;
+        justify-content: unset;
+        min-height: unset ;
+    }
+    .portfolio-text{
+        padding: 0px 20px;
+    }
+    .portfolio-title{
+        color:white;
+        font-size:40px;
+    }
+    .works-container{
+        width: 100%;
+        padding: 0px 20px;
+        margin-top: 30px;
+        z-index: 2;
+    }
+    .work-list{
+        margin: 0;
+        padding: 0;
+    }
+    .work-list li{
+        list-style-type: none;
+        margin: 25px 0px;
+        display:block;
+    }
+    .work-list li:nth-child(1){
+        margin-right:0px ;
+    }
+    .work-list li:nth-child(2){
+        margin-left:0px ;
+        margin-top: -90px;
+    }
+    .work-one, .work-two{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        height: 400px;
+        background-color: #1c1d25;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .w-text-r{
+        position: absolute;
+        bottom:50px;
+        left:50px;
+        text-align: left;
+    }
+    .w-title{
+        font-size: 35px;
+    }
+    .w-description{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    .portfolio-text-big{
+        display: none;
+    }
+    
+
+
+    /*Get-in-Touch*/
+    .get-in-touch{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .get-in-touch-layer{
+        background: #000000cd;
+        min-height: unset;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .get-in-touch-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .form-submit{
+        width: 100%;
+    }
+    
+    
+    .get-in-touch-text-big{
+        display: none;
+    }
+
 
 }
