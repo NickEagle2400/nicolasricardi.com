@@ -37,7 +37,7 @@
         <meta property="og:locale" content="it_IT">
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.nicolasricardi.com" />
-        <meta property="og:image" content="https://www.nicolasricardi.com/assets/images/nicolas.jpg" />
+        <meta property="og:image" content="https://www.nicolasricardi.com/assets/images/nwebsite.png" />
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M50417N8E4"></script>
@@ -56,7 +56,9 @@
         <div id="loader" class="loader">
             <h2 class="loader-text">Loading . . .</h2>
         </div>
-            <!-- Loader End-->
+        <!-- Loader End-->
+
+        <div id="pagination" class="pagination" style="display: none;"></div>
 
         <main id="main" style="display: none;">
             <!-- Header -->
@@ -68,7 +70,7 @@
                     </div>
                     <ul id="menu" class="nav-menu">
                         <li><a href="#about" title="About" class="hvr-underline-from-left">about</a></li>
-                        <li><a href="#skill" title="Skills" class="hvr-underline-from-left">skills</a></li>
+                        <li><a href="#skills" title="Skills" class="hvr-underline-from-left">skills</a></li>
                         <li><a href="#portfolio" title="Portfolio" class="hvr-underline-from-left">Portfolio</a></li>
                         <li><a href="#get-in-touch" title="Get in Touch" class="hvr-sweep-to-right"><strong>Get in Touch</strong></a></li>
                     </ul>
@@ -82,12 +84,16 @@
                 <div class="hero-layer">
                     <div class="hero-container">
                         <p class="hero-ita"> Find me in <span>Treviglio (BG) 🇮🇹</span></p>
-                        <h1 class="hero-title">I'm <span>Nicolas Ricardi</span></h1>
+
+                        <div class="typewriter">
+                            <h1 class="hero-title">I'm <span>Nicolas Ricardi</span></h1>
+                        </div>
+
                         <p class="hero-description">
-                            I am a <strong>junior web developer student</strong> at Strart2Impact and an aspiring <strong>IT engineer</strong>.<br />
+                            I am a <strong>junior web developer student</strong> at Start2Impact and an aspiring <strong>IT engineer</strong>.<br />
                             In my spare time I work with <strong>local companies</strong> in developing their online presence.
                         </p>
-                        <a href="#get-in-touch" class="hero-cta hvr-sweep-to-right">More about me</a>
+                        <a href="#get-in-touch" class="hero-cta hvr-sweep-to-right">More about me &nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                     <p class="hero-text-big">Hello</p>
                 </div>
@@ -106,8 +112,15 @@
                             </div>
                         </div>
                         <div class="about-container">
-                            <h2 class="about-title"><i class="far fa-bookmark"></i>My Story</h2>
-                            <p class="about-description">Sono uno studente di <b>Ingegneria Informatica</b> al <b>Politecnico di Milano</b>.<br /> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dolorum tempora voluptatem ratione totam id ipsam iusto quo consequatur minima, nulla incidunt laboriosam hic voluptas quisquam quibusdam a reiciendis provident!</p>
+                            <h2 class="about-title"><i class="far fa-bookmark"></i> My Story</h2>
+                            <p class="about-description">
+                                <span class="sub-p">In my childhood I became passionate about the world of IT.</span>
+                                <span class="sub-p">I followed my passion in studies, so as to graduate in Computer Science and study to become an IT engineer.</span>
+                                <span class="sub-p">In recent years, I have been looking for a way to become self-sufficient while studying.
+                                    I thought that combining business with pleasure by starting to collaborate with some local companies in the development of their website and E-Commerce.</span>
+                                    
+                                <span class="sub-p">I recently joined the <a class="default-link" href="https://www.start2impact.it/">Start2Impact community</a>, in order to improve my skills.</span>
+                            </p>
                         </div>
                     </div>
                     <p class="about-text-big">About</p>
@@ -116,14 +129,81 @@
             <!-- About End -->
 
             <!-- Skills -->
-
+            <section id="skills" class="skills">
+                <div class="skills-text">
+                    <h2><i class="far fa-chart-bar"></i> Skills</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-row">
+                        <div class="skill html">
+                            <div class="skill-container">
+                                <div class="skill-img">
+                                    <img src="assets/images/html.png" />
+                                </div>
+                                <div class="skill-text">
+                                    <h3 class="skill-name">HTML-5</h3>
+                                    <p class="skill-description">90%</p>
+                                    <div class="skillbar">
+                                        <div class="skillbar-html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill css">
+                            <div class="skill-container">
+                                <div class="skill-img">
+                                    <img src="assets/images/css-3.png" />
+                                </div>
+                                <div class="skill-text">
+                                    <h3 class="skill-name">CSS-3</h3>
+                                    <p class="skill-description">80%</p>
+                                    <div class="skillbar">
+                                        <div class="skillbar-css"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skill javascript">
+                            <div class="skill-container">
+                                <div class="skill-img">
+                                    <img src="assets/images/js.png" />
+                                </div>
+                                <div class="skill-text">
+                                    <h3 class="skill-name">Javascript</h3>
+                                    <p class="skill-description">I'm still working on it</p>
+                                    <div class="skillbar">
+                                        <div class="skillbar-js"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill react">
+                            <div class="skill-container">
+                                <div class="skill-img">
+                                    <img src="assets/images/react.png" />
+                                </div>
+                                <div class="skill-text">
+                                    <h3 class="skill-name">React.js</h3>
+                                    <p class="skill-description">I'm still working on it</p>
+                                    <div class="skillbar">
+                                        <div class="skillbar-react"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="skill-text-big">Skills</p>
+            </section>
 
             <!-- Skills End -->
 
             <!-- Portfolio -->
             <section id="portfolio" class="portfolio">
                 <div class="portfolio-text">
-                    <h2 class="portfolio-title">Latest Works</h2>
+                    <h2 class="portfolio-title"><i class="far fa-folder-open"></i> Latest Works</h2>
                 </div>
                 <div class="works-container">
                     <ul class="work-list">
@@ -141,14 +221,15 @@
                             <div class="work-two">
                                 <div class="w-layer"></div>
                                 <div class="w-text-r">
-                                    <h3 class="w-title">Hintime Point Beautybos</h3>
-                                    <p class="w-description">Beauty Salon in Trento</p>
-                                    <a href="https://www.hintimepointtrento.it" target="_blank" rel="nofollow" title="Case Study - Hintime Point BeautyBos" class="w-link hvr-sweep-to-left"><i class="fas fa-long-arrow-alt-left"></i> Visit Website</a>
+                                    <h3 class="w-title">Gino App <sup>(MVP)</sup></h3>
+                                    <p class="w-description">Mobile App for tractor monitoring</p>
+                                    <a href="https://bergamo.corriere.it/notizie/cronaca/19_giugno_06/gino-app-trattori-banchi-scuola-same-d3376712-882b-11e9-9099-5a05167d4d6a.shtml" target="_blank" rel="nofollow" title="Case Study - Hintime Point BeautyBos" class="w-link hvr-sweep-to-left"><i class="fas fa-long-arrow-alt-left"></i> Read Article</a>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
+                <p class="portfolio-text-big">Portfolio</p>
             </section>
             <!-- Portfolio End -->
 
@@ -175,7 +256,7 @@
                                 <label for="Message" class="form-label">Message*</label>
                             </div>
 
-                            <p class="privacy"><input type="checkbox" required="required" name="Privacy" id="Privacy"> <label for="Privacy" class="label-privacy privacy"><b>ACCETTO</b> </label> | Ho letto e accetto la politica di privacy ai sensi del Regolamento 2016/679 (GDPR).</p>
+                            <p class="privacy"><input type="checkbox" required="required" name="Privacy" id="Privacy"> <label for="Privacy" class="label-privacy privacy"><b>ACCEPT</b> </label> | I have read and accept the privacy policy. (GDPR, Regulation 2016/679).</p>
                             
                             <input type="submit" required="required" name="Submit" id="Submit" value="Send Message" class="form-submit">
                         </form>
@@ -201,17 +282,31 @@
             <!-- Left Sidebar End-->
         </main>
 
-        <script>
+        <script type="text/javascript" language="JavaScript">
             var elem;
 
             function load() {
-                elem = setTimeout(showPage, 1000);
+                elem = setTimeout(showPage, 3000);
             }
             
             function showPage() {
                 document.getElementById("loader").style.display = "none";
+                document.getElementById("pagination").style.display = "block";
                 document.getElementById("main").style.display = "block";
             }
         </script>
+
+        <script type="text/javascript" language="JavaScript">
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+
     </body>
 </html>
