@@ -401,14 +401,16 @@ footer .copyright p a:hover{
     .nav-menu{
     }
     .nav-menu li{
-
+        display: none;
+    }
+    .nav-menu li:nth-child(4){
+        display: block;
     }
     .nav-menu li a{
-        display: none;
+        
     }
 
     .nav-menu li:nth-child(4) a{
-        display: block;
         position: relative;
         width:100%;
         font-size: 14px;
@@ -424,7 +426,7 @@ footer .copyright p a:hover{
 
     /* FOOTER */
     footer{
-        padding: 20px 30px;
+        padding: 20px 10px;
     }
 
 }
