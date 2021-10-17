@@ -10,11 +10,86 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="../assets/css/style.css" />
-        <link rel="stylesheet" href="../assets/css/custom.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" type="text/css"/>
 
         <style>
+            /* HERO */
+            .hero{
+                display: block;
+                /*background: url(../img/portrait2.jpg);*/
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .hero-layer{
+                background: linear-gradient(to top, #000000,#11181a70);
+                /*background: linear-gradient(to right, #00000070,#11181a70);*/
+                height: 100vh;
+                width: 100%;
+            }
+            .hero-container{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                padding: 0px 250px;
+            }
+            .hero-ita{
+                margin: 10px 0px;
+            }
+            .hero-ita span{
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .hero-title{
+                letter-spacing: -3px;
+                color: #fff;
+                line-height: 1.1;
+            }
+
+            .hero-description{
+                margin: 0px;
+                line-height: 1.5;
+                font-weight: 200;
+            }
+            .hero-social{
+                display: none;
+            }
+            .hero-cta{
+                font-size: 20px;
+                width: 250px;
+                text-decoration: none;
+                text-align: center;
+                border: 2px solid #fff;
+                background: transparent;
+                color:#fff;
+                margin-top: 50px;
+                text-transform: capitalize;
+                font-weight: bold;
+                padding: 15px 25px;
+            }
+            .hvr-sweep-to-right:before{
+                background: #fff!important;
+            }
+            .hero-cta:hover{
+                color:#11181a!important;
+            }
+            .hero-text-big{
+                position: absolute;
+                font-weight: bold;
+                bottom:20px;
+                right:80px;
+                font-size: 180px;
+                color: #7a7a7a40;
+                letter-spacing: -10px;
+                margin: 0;
+                line-height: 1;
+                z-index: 3;
+            }
+
             @media screen and (max-width: 676px) {
                 /* HERO */
                 .hero{
@@ -24,6 +99,33 @@
                 .hero-layer{
                     height: 100%;
                 }
+                .hero-container{
+                    padding: 0px 20px;
+                }
+                .hero-ita{
+                    margin: 10px 0px;
+                }
+                .hero-social{
+                    display: block;
+                    margin-top: 0px;
+                }
+                .hero-social li a{
+                    font-size: 30px;
+                }
+                .hero-social li{
+                    display: inline-block;
+                    margin-top: 30px;
+                    margin-right: 30px;
+                }
+                .hero-cta{
+                    font-size: 18px;
+                    width: 100%;
+                    margin-top: 30px;
+                }
+                .hero-text-big{
+                    display: none;
+                }
+            }
         </style>
         <!-- Canonical URL-->
         <link rel="canonical" href="https://www.nicolasricardi.com/thank-you" >
