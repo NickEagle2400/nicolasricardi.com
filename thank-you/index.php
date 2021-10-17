@@ -76,7 +76,7 @@
 
         <!-- Loader -->
         <div id="loader" class="loader">
-            <h2 class="loader-text">Loading . . .</h2>
+            <h2 class="loader-text">Sending . . .</h2>
         </div>
         <!-- Loader End-->
 
@@ -106,7 +106,10 @@
             <section class="hero">
                 <div class="hero-layer">
                     <div class="hero-container">
-                        <p class="hero-ita"><?php echo "Thank you " + $GET[fullName] + ". Message sent successfully" ?></p>
+                        <p class="hero-ita">Thank you<span style="color: #389edb; text-transform:capitalize;">
+                            <?php 
+                                echo " " . $_GET['fullName']?>
+                                </span>. Message sent successfully.</p>
                         <h1 class="hero-title">I will get back to you as soon as possible</h1>
                         <ul class="hero-social">
                             <li><a href="https://www.instagram.com/nick_ricardi" title="Instagram" target="_blank" rel="nofollow noreferrer"><i class="ig fab fa-instagram"></i></a></li>
@@ -143,7 +146,7 @@
             var elem;
 
             function load() {
-                elem = setTimeout(showPage, 1500);
+                elem = setTimeout(showPage, 2000);
             }
             
             function showPage() {
