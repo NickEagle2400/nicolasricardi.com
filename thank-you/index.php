@@ -126,6 +126,11 @@
                     display: none;
                 }
             }
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                .hero-container{
+                    padding: 80px;
+                }
+            }
         </style>
         <!-- Canonical URL-->
         <link rel="canonical" href="https://www.nicolasricardi.com/thank-you" >
