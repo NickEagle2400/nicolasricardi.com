@@ -1,5 +1,5 @@
-User-agent: Googlebot
-Allow: /
+User-agent: *
+Disallow: /pageNotFound/
 
 User-agent: *
 Allow: /
