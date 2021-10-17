@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nicolas Ricardi - Junior Web Developer</title>
+        <title>Message Sent Successfully</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -14,6 +14,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" type="text/css"/>
 
+        <style>
+            @media screen and (max-width: 676px) {
+                /* HERO */
+                .hero{
+                    height: 100vh;
+                    margin-bottom: 20px;
+                }
+                .hero-layer{
+                    height: 100%;
+                }
+        </style>
         <!-- Canonical URL-->
         <link rel="canonical" href="https://www.nicolasricardi.com/thank-you" >
 
@@ -39,27 +50,6 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.nicolasricardi.com" />
         <meta property="og:image" content="https://www.nicolasricardi.com/assets/images/website.png" />
-
-        <!-- Microdata -->
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Treviglio",
-                    "addressRegion": "Lombardia",
-                    "postalCode": "24047",
-                },
-                
-                "email": "mailto:info@nicolasricardi.com",
-                "image": "me.jpeg",
-                "jobTitle": "Junior Web Developer",
-                "name": "Nicolas Ricardi",
-                "telephone": "(+39) 3489952170",
-                "url": "https://www.nicolasricardi.com"
-            }
-            </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M50417N8E4"></script>
