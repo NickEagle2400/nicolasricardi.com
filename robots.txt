@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /pageNotFound/
+Disallow: /pageNotFound
 
 User-agent: *
 Allow: /
