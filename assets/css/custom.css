@@ -248,7 +248,7 @@
     top: 0;
     padding: 25px;
     width: 46%;
-    height: 180px;
+    height: 100%px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,6 +289,7 @@
 
 .skill-container{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -303,7 +304,10 @@
 
 .skill-text{
     width: 70%;
-    padding-left: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .skill-name{
     color: white;
@@ -311,7 +315,7 @@
 }
 .skillbar{
     height: 10px;
-    width: 200px;
+    width: 100%;
     margin-top: 20px;
     background: #1c1d25;
     border:1px solid transparent;
@@ -519,10 +523,11 @@
 }
 .get-in-touch-layer{
     background: #000000cd;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
+    padding-bottom: 250px;
 }
 .get-in-touch-title{
     color:#fff;
@@ -676,15 +681,7 @@ input:-webkit-autofill:active {
 
 
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
     /* HERO */
     .hero{
         height: 100%;
@@ -796,6 +793,7 @@ input:-webkit-autofill:active {
     }
     .skill-img{
         width: 32%;
+        padding: 20px 0px;
     }
     .skill-text{
         width: 68%;
@@ -903,6 +901,7 @@ input:-webkit-autofill:active {
         width: 100%;
         position: relative;
         overflow: hidden;
+        padding-bottom: 30px;
     }
 
     .get-in-touch-container{
