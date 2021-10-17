@@ -70,6 +70,9 @@
     line-height: 1.5;
     font-weight: 200;
 }
+.hero-social{
+    display: none;
+}
 .hero-cta{
     font-size: 20px;
     width: 250px;
@@ -683,7 +686,10 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 676px) {
     /* HERO */
- 
+    .hero{
+        height: 100%;
+        margin-bottom: 20px;
+    }
     .hero-layer{
         margin-top: 150px;
         height: 100%;
@@ -698,10 +704,22 @@ input:-webkit-autofill:active {
         width: 100%;
         margin: 15px 0px;
     }
-
+    .hero-social{
+        display: block;
+        margin-top: 0px;
+    }
+    .hero-social li a{
+        font-size: 30px;
+    }
+    .hero-social li{
+        display: inline-block;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
     .hero-cta{
         font-size: 18px;
         width: 100%;
+        margin-top: 30px;
     }
     .hero-text-big{
         display: none;
