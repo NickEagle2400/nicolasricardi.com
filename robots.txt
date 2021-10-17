@@ -4,4 +4,4 @@ Disallow: /pageNotFound
 User-agent: *
 Allow: /
 
-Sitemap: http://www.nicolasricardi.com/sitemap.xml
+Sitemap: https://www.nicolasricardi.com/sitemap.xml
