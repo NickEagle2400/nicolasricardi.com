@@ -5,62 +5,6 @@ Author => Nicolas Ricardi
 Author URL => www.nicolasricardi.com
 */
 
-/*
------------------------------------------------------------------------------------------------------------------------
-CONTENT
-
-1 - IMPORT
-
-2 - ROOT ELEMENTS
-    2.1 - Template Colors
-    2.2 - Template Font Family
-    2.3 - Template Font Size
-    2.4 - Template Line Height
-    2.5 - Template Padding Button
-    2.6 - Template Selection
-    2.7 - Template Scrollbar
-    2.8 - Other
-    2.9 - Custom Variables
-
-3 - HELPERS
-    3.1 - Colors
-        3.1.1 Template Colors
-        3.2.2 Generic Colors
-    3.2 - Background Colors
-    3.3 - Font Family
-    3.4 - Font Size
-    3.5 - Text Transform
-
-    3.7 - FlexBox
-    3.8 - Button
-    3.9 - Other
-    3.11 - Custom Helpers
-
-4 - ELEMENTS
-    4.1 - Selection
-    4.2 - Scrollbar
-    4.3 - Parallax
-
-5 - HTML - BODY - ROOT CONTAINER 
-
-6 - HEADER
-    6.1 - Header
-        6.1.1 - 'Element #1'
-    6.2 - Header Media Query
-
-7 - MAIN   
-    7.1 - Main
-        7.1.1 - 'Element #1'
-    7.2 - Main Media Query
-
-8 - FOOTER
-    8.1 - Footer
-        8.1.1 - 'Element #1'
-    8.2 - Footer Media Query
-
------------------------------------------------------------------------------------------------------------------------
-
-*/
 
 /* IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
