@@ -1,16 +1,47 @@
-//Get Buttons
-const btnPlus = document.getElementById('plus');
-const btnMinus = document.getElementById('minus');
-const btnReset = document.getElementById('reset');
+//Create Counter
+const counter = document.getElementById('counter');
 
-//get offset input
-const inputOffset = document.getElementById('offset-value');
+const btnPlus = document.createElement('button');
+const btnMinus = document.createElement('button');
+const btnReset = document.createElement('button');
+
+const counterValue = document.createElement('p');
+
+const offsetContainer = document.createElement('div');
+
+const offsetLabel = document.createElement('label');
+const offsetValue = document.createElement('input');
+
+counter.append(btnPlus);
+btnPlus.setAttribute('id','plus');
+btnPlus.innerHTML = "+";
+
+counter.append(counterValue);
+counterValue.setAttribute('id','counter-value');
+counterValue.innerHTML = "0";
+
+counter.append(btnMinus);
+btnMinus.setAttribute('id','minus');
+btnMinus.innerHTML = "-";
+
+counter.append(btnReset);
+btnReset.setAttribute('id','reset');
+btnReset.innerHTML = "Reset Counter";
+
+counter.append(offsetContainer);
+
+offsetContainer.append(offsetLabel);
+offsetLabel.setAttribute('for','offset-value');
+offsetLabel.innerHTML = "Offset Value:"
+
+offsetContainer.append(offsetValue);
+offsetValue.setAttribute('id','offset-value');
+offsetValue.setAttribute('type', 'text');
+offsetValue.setAttribute('name', 'offset-value');
+offsetValue.setAttribute('value', '0');
 
 //set default offset undefined
 var offset = undefined;
-
-//Get counter paragraph
-const counterValue = document.getElementById('counter-value');
 
 //Set start value to 0
 counterValue.innerHTML = 0;
@@ -22,9 +53,7 @@ var count = 0;
 btnPlus.addEventListener('click', add);
 btnMinus.addEventListener('click', sub);
 btnReset.addEventListener('click', reset);
-inputOffset.addEventListener('focusout', setOffset)
-
-
+offsetValue.addEventListener('focusout', setOffset);
 
 //Add offset to counter
 function add(){
@@ -49,7 +78,7 @@ function reset(){
     count = 0;
 
     offset = undefined;
-    inputOffset.value = 0;
+    offsetValue.value = 0;
 
     btnPlus.innerHTML = "+";
     btnMinus.innerHTML = "-";
@@ -57,7 +86,7 @@ function reset(){
 
 //Set offset and update buttons value
 function setOffset(){
-    var temp = Number(inputOffset.value)
+    var temp = Number(offsetValue.value)
 
     if(!isNaN(temp)){
         offset = temp;
@@ -65,9 +94,8 @@ function setOffset(){
         btnPlus.innerHTML = "+" + offset;
         btnMinus.innerHTML = "-" + offset;
     }else{
-        inputOffset.value = 0;
+        offsetValue.value = 0;
+        alert("A valid number is required. Please, try again.");
     }
     
 }
-
-
