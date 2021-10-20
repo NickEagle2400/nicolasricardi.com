@@ -15,7 +15,7 @@ Start2Impact - Javascript basic guide project
 ## About The Project
 Simple javascript counter
 
-[![JS Counter Screenshot][www.nicolasricardi.com/assets/images/appcounter.png]](https://www.nicolasricardi.com/project/js-counter)
+[![JS Counter Screenshot](https://www.nicolasricardi.com/project/js-counter/assets/images/appcounter.png)](https://www.nicolasricardi.com/project/js-counter)
 
 ## Built With
 This project is built with javascript
@@ -30,7 +30,8 @@ You can see and try the project here [www.nicolasricardi.com](https://www.nicola
  3. Start counting
  4. When you finish counting, click on the reset button
 
-*Note: The input field verifies that input value is a number. Otherwise, input value will be reset to '0' as default value and show an alert messagge.*
+*Note: The input field verifies that the input value is a number. Otherwise, the input value will be reset to "0" by default and will show a warning message.*
+
 
 ## Contact
 
