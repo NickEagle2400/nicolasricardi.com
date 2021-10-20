@@ -43,9 +43,6 @@ offsetValue.setAttribute('value', '0');
 //set default offset undefined
 var offset = undefined;
 
-//Set start value to 0
-counterValue.innerHTML = 0;
-
 //var counter
 var count = 0;
 
@@ -74,7 +71,7 @@ function sub(){
 //Reset counter
 function reset(){
 
-    counterValue.innerHTML = 0;
+    counterValue.innerHTML = "0";
     count = 0;
 
     offset = undefined;
